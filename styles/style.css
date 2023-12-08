@@ -1,0 +1,304 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-image: linear-gradient(90deg, #969696, #969696);
+}
+
+/*começo header */
+.container-header{
+    max-width: 100%;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+header{
+    background-color:rgb(34, 34, 34);
+    width: 100%;
+    padding: 10px;
+}
+
+.logo, .redes{
+    width: 25%;
+}
+
+.logo img{
+    width: 80px;
+    cursor: pointer;
+}
+
+.paginas{
+    width: 50%;
+}
+
+ a{
+    color: aliceblue;
+    text-decoration: none;
+    padding-right: 50px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 15px;
+    position: relative;
+}
+
+a:hover{
+    color: rgb(136, 119, 119);
+    transition: all 0.5s;
+}
+
+
+.paginas nav a::after{
+   content: " ";
+   width: 0px;
+   height: 4px;
+   background-image: linear-gradient(45deg, #ff2500, #ff7100);
+   position: absolute;
+   top: 20px;
+   left: 0;
+}
+
+.paginas nav a:hover::after{
+    width: 50px;
+    transition: 0.5s;
+}
+
+.redes a {
+    border: 2px;
+}
+
+
+
+.redes a i{
+    font-size: 30px;
+    color: aliceblue;
+
+}
+
+.redes a i:hover{
+color: #ff7100;
+transition: all 0.5s;
+}
+
+
+/* final header */
+
+/* começo footer */
+
+footer{
+    background-color: rgb(34, 34, 34);
+    padding: 10px;
+}
+
+footer .container-footer{
+    display: flex;
+    color: white;
+    margin-left: 150px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+footer .container-footer ul{
+    width: 25%;
+    list-style: none;
+    padding-right: 50px;
+}
+
+footer .container-footer h3{
+    margin-bottom: 16px;
+    font-weight: 600px;
+}
+
+footer .container-footer ul > p{
+    margin-bottom: 40px;
+}
+
+footer .container-footer li{
+    margin: 10px 0;
+}
+
+footer .container-footer a{
+    color: aliceblue;
+}
+
+footer .container-footer span{
+    color: #ff7100;
+}
+
+footer .container-footer a:hover{
+    color: #ff7100;
+}
+
+.redes-footer i{
+    font-size: 30px;
+}
+
+i{
+    margin-right: 8px;
+}
+
+
+
+/* final footer */
+
+@media (max-width: 414px) {
+    footer .container-footer {
+        flex-direction: column; 
+        align-items: center; 
+        text-align: center; 
+    }
+
+    footer .container-footer ul {
+        width: 100%; 
+        padding-right: 50%;
+        margin-top: 10px;
+    }
+
+    footer .container-footer a {
+        padding: 10px 0; 
+    }
+
+    footer .container-footer p {
+        padding: 10px 0; 
+    }
+
+    .container-header {
+        flex-direction: column; 
+        width: 100%;
+      }
+    
+      .logo, .redes {
+        width: 100%; 
+      }
+    
+      .paginas {
+        width: 100%; 
+      }
+
+      .logo img{
+        margin-left: 40%;
+      }
+
+      .redes a i{
+        margin-left: 45%;
+        display: flex;
+      }
+
+      .paginas{
+        margin-left: 20px; 
+      }
+
+      body{
+        align-items: center;
+      }
+}
+
+@media screen and (max-width: 414px) {
+  
+
+    .logo,
+    .paginas,
+    .redes {
+        max-width: 100%; 
+    }
+    
+
+    .paginas,
+    .redes {
+        text-align: center; 
+    }
+
+    .redes {
+        margin-top: 10px; 
+        display: none;
+    }
+
+    .paginas a {
+        font-size: 10px;
+    }
+
+    .produtos{
+        margin-top: 40px;
+    }
+
+}
+
+@media only screen and (min-width: 600px) and (max-width: 1024px) {
+    footer .container-footer {
+        flex-direction: column; 
+        align-items: center; 
+        text-align: center; 
+    }
+
+    footer .container-footer ul {
+        width: 100%; 
+        padding-right: 50%;
+        margin-top: 10px;
+    }
+
+    footer .container-footer a {
+        padding: 10px 0; 
+    }
+
+    footer .container-footer p {
+        padding: 10px 0; 
+    }
+
+    .container-header {
+        flex-direction: column; 
+        width: 100%;
+      }
+    
+      .logo, .redes {
+        width: 100%; 
+      }
+    
+      .paginas {
+        width: 100%; 
+      }
+
+      .logo img{
+        margin-left: 40%;
+      }
+
+      .redes a i{
+        margin-left: 45%;
+        display: flex;
+      }
+
+      .paginas{
+        margin-left: 20px; 
+      }
+
+      body{
+        align-items: center;
+      }
+
+      .logo,
+    .paginas,
+    .redes {
+        max-width: 100%; 
+    }
+    
+
+    .paginas,
+    .redes {
+        text-align: center; 
+    }
+
+    .redes {
+        margin-top: 10px; 
+        display: none;
+    }
+
+    .paginas a {
+        font-size: 10px;
+    }
+
+    .produtos{
+        margin-top: 40px;
+    }
+   
+  }

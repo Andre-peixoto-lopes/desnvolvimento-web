@@ -1,0 +1,108 @@
+body.sobre{
+    background-image: linear-gradient(90deg, #0c0908, #21201f);
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.container{
+    width: 100%;
+    height: auto;
+}
+
+h1{
+    align-items: center;
+    color: aliceblue;
+    font-size: 70px;
+    margin-left: 40%;
+}
+
+p{
+    align-content: center;
+    align-items: center;
+    margin-top: 8px;
+    color: aliceblue;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+@media (max-width: 414px) {
+    footer .container-footer {
+        flex-direction: column; 
+        align-items: center; 
+        text-align: center; 
+    }
+
+    footer .container-footer ul {
+        width: 100%; 
+        padding-right: 50%;
+        margin-top: 10px;
+    }
+
+    footer .container-footer a {
+        padding: 10px 0; 
+    }
+
+    footer .container-footer p {
+        padding: 10px 0; 
+    }
+
+    .container-header {
+        flex-direction: column; 
+        width: 100%;
+      }
+    
+      .logo, .redes {
+        width: 100%; 
+      }
+    
+      .paginas {
+        width: 100%; 
+      }
+
+      .logo img{
+        margin-left: 40%;
+      }
+
+      .redes a i{
+        margin-left: 45%;
+        display: flex;
+      }
+
+      .paginas{
+        margin-left: 20px; 
+      }
+
+      body{
+        align-items: center;
+      }
+}
+
+@media screen and (max-width: 414px) {
+  
+
+    .logo,
+    .paginas,
+    .redes {
+        max-width: 100%; 
+    }
+    
+
+    .paginas,
+    .redes {
+        text-align: center; 
+    }
+
+    .redes {
+        margin-top: 10px; 
+        display: none;
+    }
+
+    .paginas a {
+        font-size: 10px;
+    }
+
+    .produtos{
+        margin-top: 40px;
+    }
+
+}
